@@ -24,19 +24,19 @@ module.exports = {
    */
   deploy : {
     production : {
-      user : 'admin',
-      host : '118.178.133.200',
+      user : 'root',
+      host : '120.79.156.96',
       ref  : 'origin/master',
       repo : 'git@github.com:xuejianrong/pm2.git',
-      path : '/home/admin/nuxt_pt/pm2/production',
+      path : '/srv/nodejs/pm2/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
-      user : 'admin',
-      host : '118.178.133.200',
+      user : 'root',
+      host : '﻿120.79.156.96',
       ref  : 'origin/master',
       repo : 'git@github.com:xuejianrong/pm2.git',
-      path : '/home/admin/nuxt_pt/pm2/development',
+      path : '/srv/nodejs/pm2/development',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
       env  : {
         NODE_ENV: 'dev'
